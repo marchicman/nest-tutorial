@@ -11,7 +11,7 @@ export class AuthController {
       signup(@Body() dto: AuthDto) {  
 // ParseIntPipe è una pipe di sistema, qui usata solo per far vedere un uso come validatore di input
       
-       return this.authService.signup();
+       return this.authService.signup(dto);
     }
 
     @Post('signin')
